@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>普通防盗</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen" />
+		<script src="/Scripts/jquery.min.js" type="text/javascript"></script>
+		<script src="/Scripts/index.js?v=1.3" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			//平台、设备和操作系统
+			var system = {
+				win: false,
+				mac: false,
+				xll: false,
+				ipad: false
+			};
+			//检测平台
+			var p = navigator.platform;
+			system.win = p.indexOf("Win") == 0;
+			system.mac = p.indexOf("Mac") == 0;
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
+			//跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+			if(system.win || system.mac || system.xll || system.ipad) {
+				//window.location.href = "/cn/";
+			} else {
+				window.location.href = "/mcn/";
+			}
+		</script>
+		<link href="/Content/css.css?v=1.3" rel="stylesheet" type="text/css" />
+		<div class="head">
+			<div class="wid">
+				<img src="/img/log.png">
+			</div>
+		</div>
+		<div class="nav">
+			<div class="wid">
+				<ul>
+					<li>
+						<a href="/cn">首页</a>
+					</li>
+					<li>
+						<a href="/cn/product/1010">防盗器</a>
+						<div class="slide">
+							<a href="/cn/product/1010">普通防盗</a>
+							<a href="/cn/product/1011">强防盗</a>
+							<a href="/cn/product/1012">超强防盗</a>
+							<a href="/cn/product/1013">集中式防盗</a>
+							<a href="/cn/product/1014">其他配件</a>
+						</div>
+					</li>
+					<li>
+						<a href="/cn/tablets">商业平板</a>
+					</li>
+					<li>
+						<a href="/cn/sosa">周边产品</a>
+					</li>
+					<li>
+						<a href="/cn/cas">成功案例</a>
+					</li>
+					<li>
+						<a href="/cn/about">关于我们</a>
+						<div class="slide">
+							<a href="/cn/about">公司概况</a>
+							<a href="/cn/news">最新资讯</a>
+							<a href="/cn/cont">联系我们</a>
+							<a href="/cn/zl">产品专利</a>
+						</div>
+					</li>
+				</ul>
+				<div class="sea">
+					<h5><span><img src="/img/sea.png"></span></h5>
+					<p><input type="text" placeholder="快速搜索" id="txtSeach"><img src="/img/sea1.png" id="btnSearch" onclick="SearchInfo();"></p>
+				</div>
+				<div class="language">
+					<h5><span>简体中文</span><img src="/img/xia.png"></h5>
+					<div class="lang_col">
+						<a href="/cn"><img src="/img/ic1.png"><span>简体中文</span></a>
+						<a href="/en"><img src="/img/ic2.png"><span>English</span></a>
+						<a href="/sp"><img src="/img/ic3.png"><span>Español</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//回车键
+			document.onkeydown = function(e) {
+				if(!e) e = window.event; //火狐中是 window.event
+				if((e.keyCode || e.which) == 13) {
+					var btlogin = document.getElementById("btnSearch");
+					btlogin.focus();
+					btlogin.click();
+				}
+			}
+
+			function SearchInfo() {
+				var val = document.getElementById("txtSeach").value;
+				location.href = "/cn/PSearch/?key=" + val;
+			}
+		</script>
+		<div class="cl-case-banner">
+			<ul>
+				<li style="background:url(/upload/image/20161124/20161124220333max.jpg) center top no-repeat;">
+					<a href=""></a>
+				</li>
+				<li style="background:url(/upload/image/20161114/20161114022636max.jpg) center top no-repeat;">
+					<a href=""></a>
+				</li>
+				<li style="background:url(/upload/image/20161118/20161118001630max.jpg) center top no-repeat;">
+					<a href=""></a>
+				</li>
+			</ul>
+			<div class="control-btn">
+			</div>
+		</div>
+		<div class="safe-tab wid">
+			<div class="nav">
+				<a href="/cn/product/101010" class="odd " style="width:20%;">手机</a>
+				<a href="/cn/product/101012" class="even " style="width:20%;">平板</a>
+				<a href="/cn/product/101013" class="odd " style="width:20%;">相机</a>
+				<a href="/cn/product/101011" class="even " style="width:20%;">可穿戴设备</a>
+				<a href="/cn/product/101014" class="odd " style="width:20%;">其他</a>
+			</div>
+			<ul class="cl-list">
+				<li>
+					<a name="MAX820 (DSLR)" id="MAX820 (DSLR)"></a>
+					<div class="describe fl">
+						<h3>MAX820 (DSLR)</h3>
+						<p>桌面立式相机单反防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX相机展示防盗解决方案，利用MAX扁平防盗主机，通过简便的安装，提供最安全的陈列，为客户提供强防盗无忧商品展示平台，创造清爽、整洁、便利的购物环境。<br/><br/>· 方形超薄主机，安装简便<br/>· 可调节镜头支架<br/>· 带镜头防盗传感器机托<br/>· 可选择带充电口机托<br/>· 挡片设计，防止相机转动相机托<br/>· 双色指示灯</p>
+						<div class="btn-group">
+							<a href="/upload/image/20161125/MAX相机方案产品规格书V3.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-1 fr" id="listimg">
+						<img src="/upload/image/20161117/20161117012138max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20161117/20161117012138max.png" alt=""></li>
+								<li><img src="/upload/image/20161117/20161117012145max.png" alt=""></li>
+								<li><img src="/upload/image/20161117/20161117012223max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="MAX800" id="MAX800"></a>
+					<div class="describe fl">
+						<h3>MAX800</h3>
+						<p>斜面手机普通防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX普通防盗系列以全新的金属外壳，家族化系列设计和小巧外形突出陈列商品。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 可伸缩弹簧线<br/>· 全金属表面<br/>· 适宜斜面和墙面展示</p>
+						<div class="btn-group">
+							<a href="/upload/image/20161124/MAX手机普通防盗规格书.pdf" target="_blank">规格书</a>
+							<a href="/upload/image/USER MANUAL/MAX800USER MANUAL-CN.pdf" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-2 fr" id="listimg">
+						<img src="/upload/image/20170121/20170121014749max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170121/20170121014749max.png" alt=""></li>
+								<li><img src="/upload/image/20170121/20170121014817max.png" alt=""></li>
+								<li><img src="/upload/image/20170121/20170121014844max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li>
+					<a name="MAX801" id="MAX801"></a>
+					<div class="describe fl">
+						<h3>MAX801</h3>
+						<p>桌面立式手机普通防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX普通防盗系列以全新的金属外壳，家族化系列设计和小巧外形突出陈列商品。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 可伸缩弹簧线<br/>· 全金属表面<br/>· 通透亚克力支架，突出展示展品特点</p>
+						<div class="btn-group">
+							<a href="" target="_blank">规格书</a>
+							<a href="/upload/image/USER MANUAL/MAX800USER MANUAL-CN.pdf" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-3 fr" id="listimg">
+						<img src="/upload/image/20170813/20170813231409max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170813/20170813231409max.png" alt=""></li>
+								<li><img src="/upload/image/20170813/20170813231425max.png" alt=""></li>
+								<li><img src="/upload/image/20170813/20170813231438max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="MAX805" id="MAX805"></a>
+					<div class="describe fl">
+						<h3>MAX805</h3>
+						<p>桌面高款手机普通防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX普通防盗系列以全新的金属外壳，家族化系列设计和小巧外形突出陈列商品。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 可伸缩弹簧线<br/>· 全金属表面<br/>· 30°倾斜支架，突出展示展品特点</p>
+						<div class="btn-group">
+							<a href="/upload/image/20161124/MAX手机普通防盗规格书.pdf" target="_blank">规格书</a>
+							<a href="/upload/image/USER MANUAL/MAX800USER MANUAL-CN.pdf" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-4 fr" id="listimg">
+						<img src="/upload/image/20170814/20170814005238max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170814/20170814005238max.png" alt=""></li>
+								<li><img src="/upload/image/20170814/20170814005251max.png" alt=""></li>
+								<li><img src="/upload/image/20170814/20170814005302max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li>
+					<a name="MAX802" id="MAX802"></a>
+					<div class="describe fl">
+						<h3>MAX802</h3>
+						<p>桌面矮款手机普通防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX普通防盗系列以全新的金属外壳，家族化系列设计和小巧外形突出陈列商品。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 可伸缩弹簧线<br/>· 全金属表面<br/>· 30°倾斜支架，突出展示展品特点</p>
+						<div class="btn-group">
+							<a href="" target="_blank">规格书</a>
+							<a href="/upload/image/USER MANUAL/MAX800USER MANUAL-CN.pdf" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-5 fr" id="listimg">
+						<img src="/upload/image/20170813/20170813235026max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170813/20170813235026max.png" alt=""></li>
+								<li><img src="/upload/image/20170813/20170813235036max.png" alt=""></li>
+								<li><img src="/upload/image/20170813/20170813235045max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="MAX851" id="MAX851"></a>
+					<div class="describe fl">
+						<h3>MAX851</h3>
+						<p>桌面立式智能笔防盗方案</p>
+						<div class="pic">
+						</div>
+						<p>MAX智能笔防盗方案采用通透笔防盗支架，可伸缩弹簧线，在保证消费者舒适体验的同时保护智能笔不被偷走。<br/><br/>· 透明防盗支架<br/>· 主机防盗接口脱落，电源线剪断，笔防盗触点断开触发报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 可伸缩弹簧线</p>
+						<div class="btn-group">
+							<a href="/upload/image/20161127/MAX智能笔普通防盗规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-6 fr" id="listimg">
+						<img src="/upload/image/20170703/20170703013715max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170703/20170703013715max.png" alt=""></li>
+								<li><img src="/upload/image/20170703/20170703013704max.png" alt=""></li>
+								<li><img src="/upload/image/20170703/20170703013728max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li>
+					<a name="MAX820 (DC)" id="MAX820 (DC)"></a>
+					<div class="describe fl">
+						<h3>MAX820 (DC)</h3>
+						<p>桌面立式普通相机防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX相机展示防盗解决方案，利用MAX扁平防盗主机，通过简便的安装，提供最安全的陈列，为客户提供强防盗无忧商品展示平台，创造清爽、整洁、便利的购物环境。<br/><br/>· 方形超薄主机，安装简便<br/>· 可调节镜头支架<br/>· 可选择带充电口机托<br/>· 挡片设计，防止相机转动相机托<br/>· 双色指示灯</p>
+						<div class="btn-group">
+							<a href="/upload/image/20161125/MAX相机方案产品规格书V3.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-7 fr" id="listimg">
+						<img src="/upload/image/20161117/20161117182942max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20161117/20161117182942max.png" alt=""></li>
+								<li><img src="/upload/image/20161117/20161117182949max.png" alt=""></li>
+								<li><img src="/upload/image/20170703/20170703013829max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="MAX810" id="MAX810"></a>
+					<div class="describe fl">
+						<h3>MAX810</h3>
+						<p>斜面平板普通防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX普通防盗系列以全新的金属外壳，家族化系列设计和小巧外形突出陈列商品。<br/><br/>· 充电口断开报警，电源线剪断报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 可伸缩弹簧线<br/>· 全金属表面<br/>· 小巧的外形，适宜斜面和墙面展示</p>
+						<div class="btn-group">
+							<a href="/upload/image/20161124/MAX平板普通防盗规格书.pdf" target="_blank">规格书</a>
+							<a href="/upload/image/USER MANUAL/MAX800USER MANUAL-CN.pdf" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-8 fr" id="listimg">
+						<img src="/upload/image/20170121/20170121022610max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170121/20170121022610max.png" alt=""></li>
+								<li><img src="/upload/image/20170121/20170121022622max.png" alt=""></li>
+								<li><img src="/upload/image/20170121/20170121022634max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li>
+					<a name="MAX815" id="MAX815"></a>
+					<div class="describe fl">
+						<h3>MAX815</h3>
+						<p>桌面高款平板普通防盗方案</p>
+						<div class="pic">
+							<a href="javascript:Show('')" class="hoverico"><img src="/upload/image/1img/充电.png" /></a>
+						</div>
+						<p>MAX普通防盗系列以全新的金属外壳，家族化系列设计和小巧外形突出陈列商品。<br/><br/>· 充电口断开报警，电源线剪断报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 可伸缩弹簧线<br/>· 全金属表面<br/>· 30°倾斜防盗展示架，适宜平面柜台展示</p>
+						<div class="btn-group">
+							<a href="/upload/image/20161124/MAX平板普通防盗规格书.pdf" target="_blank">规格书</a>
+							<a href="/upload/image/USER MANUAL/MAX800USER MANUAL-CN.pdf" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-9 fr" id="listimg">
+						<img src="/upload/image/20161117/20161117203100max.png" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20161117/20161117203100max.png" alt=""></li>
+								<li><img src="/upload/image/20161117/20161117203122max.png" alt=""></li>
+								<li><img src="/upload/image/20161117/20161117203131max.png" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="POP800" id="POP800"></a>
+					<div class="describe fl">
+						<h3>POP800</h3>
+						<p>斜面手机普通防盗方案</p>
+						<div class="pic">
+						</div>
+						<p>POP手机普通防盗包含4款不同高度和陈列角度的防盗展示架，顾客可根据实际使用需求，随意挑选。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 全金属表面，底部触点防盗<br/>· 支持水平、斜面、挂墙等多场合陈列展示</p>
+						<div class="btn-group">
+							<a href="/upload/image/20170308/POP手机普通防盗产品规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-10 fr" id="listimg">
+						<img src="/upload/image/20170308/20170308195242max.jpg" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170308/20170308195242max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308195502max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308195519max.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li>
+					<a name="POP801" id="POP801"></a>
+					<div class="describe fl">
+						<h3>POP801</h3>
+						<p>桌面立式手机普通防盗方案</p>
+						<div class="pic">
+						</div>
+						<p>POP手机普通防盗包含4款不同高度和陈列角度的防盗展示架，顾客可根据实际使用需求挑选。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 亚克力金属通透大气，底部触点防盗<br/>· 水平桌面安装，支持15°，75°角度展示</p>
+						<div class="btn-group">
+							<a href="/upload/image/20170308/POP手机普通防盗产品规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-11 fr" id="listimg">
+						<img src="/upload/image/20170308/20170308204738max.jpg" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170308/20170308204738max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308204754max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308205350max.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="POP804" id="POP804"></a>
+					<div class="describe fl">
+						<h3>POP804</h3>
+						<p>桌面矮款手机普通防盗方案</p>
+						<div class="pic">
+						</div>
+						<p>POP手机普通防盗包含4款不同高度和陈列角度的防盗展示架，顾客可根据实际使用需求挑选。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 底部触点防盗<br/>· 支持水平桌面和挂墙</p>
+						<div class="btn-group">
+							<a href="/upload/image/20170308/POP手机普通防盗产品规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-12 fr" id="listimg">
+						<img src="/upload/image/20170308/20170308223001max.jpg" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170308/20170308223001max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308223017max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308223038max.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li>
+					<a name="POP806" id="POP806"></a>
+					<div class="describe fl">
+						<h3>POP806</h3>
+						<p>桌面高款手机普通防盗方案</p>
+						<div class="pic">
+						</div>
+						<p>POP手机普通防盗包含4款不同高度和陈列角度的防盗展示架，顾客可根据实际使用需求挑选。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 亚克力金属通透大气，底部触点防盗<br/>· 60°展示，支持水平桌面</p>
+						<div class="btn-group">
+							<a href="/upload/image/20170308/POP手机普通防盗产品规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-13 fr" id="listimg">
+						<img src="/upload/image/20170308/20170308223650max.jpg" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170308/20170308223650max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308223740max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170703/20170703014915max.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="POP831" id="POP831"></a>
+					<div class="describe fl">
+						<h3>POP831</h3>
+						<p>0&#176;手表普通防盗</p>
+						<div class="pic">
+						</div>
+						<p>POP手表防盗基于两种不同造型的核心充电防盗模块搭配手表陈列支架实现对不同手表的展示防盗。<br/><br/>· 手表0°展示<br/>· 按需定制配套手表充电模块<br/>· 精选柔性硅胶避免磨损<br/>· 可视带灯表带传感器<br/>· 锁定螺丝接口<br/>· 底部防盗触点</p>
+						<div class="btn-group">
+							<a href="/upload/image/20170308/POP手表普通防盗产品规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-14 fr" id="listimg">
+						<img src="/upload/image/20170308/20170308225244max.jpg" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170308/20170308225244max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308225405max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308225417max.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li>
+					<a name="POP840" id="POP840"></a>
+					<div class="describe fl">
+						<h3>POP840</h3>
+						<p>桌面立式头戴式耳机普通防盗方案</p>
+						<div class="pic">
+						</div>
+						<p>POP耳机防盗采用核心防盗单元主机搭配全铝耳机支架，彰显品质。<br/><br/>· 全金属支架<br/>· 优质防滑材料，预防磨损<br/>· 锁定螺丝接口<br/>· 可视LED灯<br/>· 钢丝套环，防盗更安全</p>
+						<div class="btn-group">
+							<a href="/upload/image/20170308/POP耳机防盗产品规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-15 fr" id="listimg">
+						<img src="/upload/image/20170308/20170308230953max.jpg" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170308/20170308230953max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308231010max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308231020max.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+				<li class=even>
+					<a name="POP811" id="POP811"></a>
+					<div class="describe fl">
+						<h3>POP811</h3>
+						<p>轻防盗平板展示架</p>
+						<div class="pic">
+						</div>
+						<p>POP平板普通防盗产品共有3款不同高度和陈列角度的 防盗产品，顾客可根据实际使用需求挑选。<br/><br/>· 充电口断开报警，电源线断开报警<br/>· 充电接口螺丝锁定<br/>· 可视LED指示灯<br/>· 加大防滑托面，水平陈列横竖屏自由摆放<br/>· 底部触点防盗<br/>· 水平桌面安装，支持15°，75°角度展示</p>
+						<div class="btn-group">
+							<a href="/upload/image/20170308/POP平板普通防盗产品规格书.pdf" target="_blank">规格书</a>
+							<a href="" target="_blank">用户手册</a>
+						</div>
+					</div>
+					<div class="pic banner-16 fr" id="listimg">
+						<img src="/upload/image/20170703/20170703014119max.jpg" alt="" class="big-pic">
+						<div class="wrap">
+							<ul>
+								<li><img src="/upload/image/20170703/20170703014119max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308233400max.jpg" alt=""></li>
+								<li><img src="/upload/image/20170308/20170308233408max.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="left-btn"></div>
+						<div class="right-btn"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom">
+			<div class="wid">
+				<div class="bt_links">
+					<ul>
+						<li class="li">
+							<p>选购及了解</p>
+							<h5><a href="/cn/product/1010">防盗器</a></h5>
+							<h5><a href="/cn/sosa">周边产品</a></h5>
+							<h5><a href="/cn/cas">成功案例</a></h5>
+						</li>
+						<li>
+							<p>关于朗鸿</p>
+							<h5><a href="/cn/about">公司概况</a></h5>
+							<h5><a href="/cn/news">公司资讯</a></h5>
+							<h5><a href="/cn/cont">联系我们</a></h5>
+						</li>
+						<li>
+							<p>语言</p>
+							<h5><a href="/cn">简体中文</a></h5>
+							<h5><a href="/en">English</a></h5>
+							<h5><a href="/sp">Español</a></h5>
+						</li>
+						<li>
+							<p>关于我们</p>
+							<h5><a href="https://www.facebook.com/Showhi-Security-Display-Solution-706319189444276/timeline/?ref=ts" target="_blank">Facebook</a></h5>
+							<h5><a href="https://www.linkedin.com/company/langhong-technology-co-ltd-?trk=biz-companies-cym" target="_blank">Linkedln</a></h5>
+							<h5><a href="/cn/cont">留言板</a></h5>
+						</li>
+						<li>
+							<h4>400 - 007 - 0201</h4>
+							<p>（北京时间周一至周五<br />9:00-17:30）</p>
+							<h6><img src="/img/ic9.png"><span>info@lhtglobal.com</span></h6>
+						</li>
+						<li style="width:195px;">
+							<h6><img src="/img/ic7.png"><span>中国</span></h6>
+							<h6><img src="/img/ic8.png">杭州市滨江区月明路560号正泰大厦1号楼19楼</h6>
+						</li>
+						<li class="no" style="width:195px;">
+							<h6><img src="/img/ic7.png"><span>美国</span></h6><br />
+							<h6><img src="/img/ic9.png"><span>info@lhtglobal.com</span></h6><br />
+							<h6><img src="/img/ic10.png"><span>1-925-231-4022</span></h6>
+						</li>
+					</ul>
+				</div>
+				<div class="bt-bt">
+					<p>版权所有 © 2016 杭州朗鸿科技股份有限公司。 保留一切权利。丨
+						<a href="#">法律声明</a>丨
+						<a href="#">隐私条款</a>丨
+						<a href="#">开发中心</a>丨
+						<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802005406" target="_blank">浙33010802005406号</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="goTotop">
+			<span onclick="gotoTop()"></span>
+		</div>
+		<script src="/layer/layer.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(".nav .wid li").eq("1").addClass("sli");
+			fade('.cl-case-banner');
+
+			function Show(obj) {
+				var path = sy.url() + obj;
+				layer.open({
+					type: 1,
+					title: '查看说明',
+					shadeClose: true,
+					area: ['640px', '515px'],
+					content: "<img src=" + path + ">"
+				});
+			}
+
+			function gotoTop(acceleration, stime) {
+				acceleration = acceleration || 0.1;
+				stime = stime || 10;
+				var x1 = 0;
+				var y1 = 0;
+				var x2 = 0;
+				var y2 = 0;
+				var x3 = 0;
+				var y3 = 0;
+				if(document.documentElement) {
+					x1 = document.documentElement.scrollLeft || 0;
+					y1 = document.documentElement.scrollTop || 0;
+				}
+				if(document.body) {
+					x2 = document.body.scrollLeft || 0;
+					y2 = document.body.scrollTop || 0;
+				}
+				var x3 = window.scrollX || 0;
+				var y3 = window.scrollY || 0;
+				// 滚动条到页面顶部的水平距离
+				var x = Math.max(x1, Math.max(x2, x3));
+				// 滚动条到页面顶部的垂直距离
+				var y = Math.max(y1, Math.max(y2, y3));
+				// 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+				var speeding = 1 + acceleration;
+				window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+				// 如果距离不为零, 继续调用函数
+				if(x > 0 || y > 0) {
+					var run = "gotoTop(" + acceleration + ", " + stime + ")";
+					window.setTimeout(run, stime);
+				}
+			}
+		</script>
+	</body>
+
+</html>

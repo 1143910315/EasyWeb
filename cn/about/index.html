@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>公司概况</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">   
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" media="screen" />
+    <script src="/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/Scripts/index.js?v=1.3" type="text/javascript"></script>
+    
+</head>
+<body>
+   
+
+<script type="text/javascript">
+
+    //平台、设备和操作系统
+    var system = {
+        win: false,
+        mac: false,
+        xll: false,
+        ipad: false
+    };
+    //检测平台
+    var p = navigator.platform;
+    system.win = p.indexOf("Win") == 0;
+    system.mac = p.indexOf("Mac") == 0;
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+    system.ipad = (navigator.userAgent.match(/iPad/i) != null) ? true : false;
+    //跳转语句，如果是手机访问就自动跳转到wap.baidu.com页面
+    if (system.win || system.mac || system.xll || system.ipad) {
+        //window.location.href = "/cn/";
+    } else {
+        window.location.href = "/mcn/";
+    }
+
+</script>
+<link href="/Content/css.css?v=1.3" rel="stylesheet" type="text/css" />
+<div class="head">
+    <div class="wid">
+        <img src="/img/log.png">
+    </div>
+</div>
+<div class="nav">
+    <div class="wid">
+        <ul>            
+            <li><a href="/cn">首页</a></li>
+            <li>
+                <a href="/cn/product/1010">防盗器</a>
+                <div class="slide">
+                    <a href="/cn/product/1010">普通防盗</a>
+                    <a href="/cn/product/1011">强防盗</a>
+                    <a href="/cn/product/1012">超强防盗</a>
+                    <a href="/cn/product/1013">集中式防盗</a>
+                    <a href="/cn/product/1014">其他配件</a>
+                </div>
+            </li>
+            <li>
+                <a href="/cn/tablets">商业平板</a>
+            </li>
+            <li>
+                <a href="/cn/sosa">周边产品</a>
+            </li>
+            <li>
+                <a href="/cn/cas">成功案例</a>
+            </li>
+            <li>
+                <a href="/cn/about">关于我们</a>
+                <div class="slide">
+                    <a href="/cn/about">公司概况</a>
+                    <a href="/cn/news">最新资讯</a>
+                    <a href="/cn/cont">联系我们</a>
+                    <a href="/cn/zl">产品专利</a>
+                </div>
+            </li>
+        </ul>
+        <div class="sea">
+            <h5><span><img src="/img/sea.png"></span></h5>
+            <p><input type="text" placeholder="快速搜索" id="txtSeach"><img src="/img/sea1.png" id="btnSearch" onclick="SearchInfo();"></p>
+        </div>
+        <div class="language">
+            <h5><span>简体中文</span><img src="/img/xia.png"></h5>
+            <div class="lang_col">
+                <a href="/cn"><img src="/img/ic1.png"><span>简体中文</span></a>
+                <a href="/en"><img src="/img/ic2.png"><span>English</span></a>
+                <a href="/sp"><img src="/img/ic3.png"><span>Español</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">   
+    //回车键
+    document.onkeydown = function (e) {
+        if (!e) e = window.event; //火狐中是 window.event
+        if ((e.keyCode || e.which) == 13) {
+            var btlogin = document.getElementById("btnSearch");
+            btlogin.focus();
+            btlogin.click();
+        }
+    }
+    function SearchInfo() {
+        var val = document.getElementById("txtSeach").value;
+        location.href = "/cn/PSearch/?key=" + val;
+    }   
+</script>
+<div class="company_list">
+    <div class="wid">
+        <ul>
+            <li class="sli">
+                <h4><a href="#company" class="hoverico"><img src="/img/ic11.png"></a></h4>
+                <p>公司简介</p>
+            </li>
+            <li>
+                <h4><a href="#lc" class ="hoverico"><img src="/img/ic12.png"></a></h4>
+                <p>发展历程</p>
+            </li>
+            <li>
+                <h4><a href="#shi" class="hoverico"><img src="/img/ic13.png"></a></h4>
+                <p>设备实力</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<a name="company" id="company"></a>
+<div class="comp_instr wid">
+    <h5><span>公司简介</span></h5>
+    <h4>朗鸿科技</h4>
+    <p>杭州朗鸿科技股份有限公司，成立于2008年，注册资金3600万，是一家专注于商品展示防盗和体验式营销的高新技术企业。公司致力于规范运营，于2016年3月10日挂牌新三板，借助资本市场的力量，扩大规模，稳步向前。
+朗鸿科技聚焦于防盗器的设计及生产，致力于为品牌商，电信运营商、数码连锁提供体验式营销解决方案，相继成为华为，OPPO，VIVO，HTC，Samsung等多家国内外知名品牌合作伙伴，作为国内领军企业，产品销售面向全球，出口遍及欧洲、美洲、中东、东南 亚等70多个国家及地区，为广大客户提供本地化，人性化的售前、售后服务。
+目前公司拥有10,000平米厂房，以及多条生产线和各种大型生产设备，并建设有完善的质量管控制度，获得管理体系认证（ISO14001、ISO9001）。拥有庞大的资深设计、开发、质检、销售团队，研发投入远超同行业水平。在防盗器的生产和设计上具备强劲实力和竞争优势。朗鸿科技以“体验改变世界”的企业使命和“追求卓越，分享精彩”的企业文化为推动力，希望通过专业水平和不懈努力，引导体验式营销的销售新模式，用优质的产品与服务，为企业推广宣传提供服务，驱动企业不断创新及发展。朗鸿科技计划用未来5年时间立足中国，创造一家集产品研发、设计、销售和服务于一体，覆盖全球的国际化、高科技上市公司！</p>
+</div>
+<a name="lc" id="lc"></a>
+<div class="comp_course">
+    <div class="wid">
+        <h5><span>发展经历</span></h5>
+        <h4><img src="/img/co1.jpg"></h4>
+    </div>
+</div>
+<a name="shi" id="shi"></a>
+<div class="comp_power wid">
+    <h5><span>设备实力</span></h5>
+    <div class="comp_power_img">
+        <p><img src="/img/img2.jpg"></p>
+        <p class="p1"><img src="/img/img3.jpg"></p>
+        <div class="comp_power_img_lis">
+            <img src="/img/img4.jpg">
+        </div>
+        <h3><img src="/img/img6.jpg"></h3>
+        <h3><img src="/img/img7.jpg"></h3>
+        <h3><img src="/img/img8.jpg"></h3>
+        <h3 class="no"><img src="/img/img9.jpg"></h3>
+        <h3><img src="/img/img10.jpg" /></h3>
+        <h3><img src="/img/img11.jpg"></h3>
+        <h3><img src="/img/img12.jpg"></h3>
+        <h3 class="no"><img src="/img/img13.jpg"></h3>
+    </div>
+</div>
+<div class="bottom">
+    <div class="wid">
+        <div class="bt_links">
+            <ul>
+                <li class="li">
+                    <p>选购及了解</p>
+                    <h5><a href="/cn/product/1010">防盗器</a></h5>
+                    <h5><a href="/cn/sosa">周边产品</a></h5>
+                    <h5><a href="/cn/cas">成功案例</a></h5>
+                </li>
+                <li>
+                    <p>关于朗鸿</p>
+                    <h5><a href="/cn/about">公司概况</a></h5>
+                    <h5><a href="/cn/news">公司资讯</a></h5>
+                    <h5><a href="/cn/cont">联系我们</a></h5>
+                </li>
+                <li>
+                    <p>语言</p>
+                    <h5><a href="/cn">简体中文</a></h5>
+                    <h5><a href="/en">English</a></h5>
+                    <h5><a href="/sp">Español</a></h5>
+                </li>
+                <li>
+                    <p>关于我们</p>
+                    <h5><a href="https://www.facebook.com/Showhi-Security-Display-Solution-706319189444276/timeline/?ref=ts" target="_blank">Facebook</a></h5>
+                    <h5><a href="https://www.linkedin.com/company/langhong-technology-co-ltd-?trk=biz-companies-cym" target="_blank">Linkedln</a></h5>
+                    <h5><a href="/cn/cont">留言板</a></h5>
+                </li>
+                <li>
+                    <h4>400 - 007 - 0201</h4>
+                    <p>（北京时间周一至周五<br />9:00-17:30）</p>
+                    <h6><img src="/img/ic9.png"><span>info@lhtglobal.com</span></h6>
+                </li>
+                <li style="width:195px;">
+                    <h6><img src="/img/ic7.png"><span>中国</span></h6>
+                    <h6><img src="/img/ic8.png">杭州市滨江区月明路560号正泰大厦1号楼19楼</h6>
+                </li>
+                <li class="no" style="width:195px;">
+                    <h6><img src="/img/ic7.png"><span>美国</span></h6><br />
+                    <h6><img src="/img/ic9.png"><span>info@lhtglobal.com</span></h6><br />
+                    <h6><img src="/img/ic10.png"><span>1-925-231-4022</span></h6>
+                </li>
+            </ul>
+        </div>
+        <div class="bt-bt">
+            <p>版权所有 ©  2016 杭州朗鸿科技股份有限公司。 保留一切权利。丨<a href="#">法律声明</a>丨<a href="#">隐私条款</a>丨<a href="#">开发中心</a>丨<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802005406" target="_blank">浙33010802005406号</a></p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(".nav .wid li").eq("5").addClass("sli");
+</script>
+</body>
+</html>
